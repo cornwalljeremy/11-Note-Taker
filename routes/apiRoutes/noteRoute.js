@@ -1,5 +1,5 @@
-const { filterByQuery, findById, createNewNote } = require("../../lib/notes");
-const { notes } = require("../../db/db");
+const { filterByQuery, findById, createNewNote, validateNotes } = require("../../lib/notes");
+const { notes } = require("../../db/db.json");
 const router = require("express").Router();
 
 router.get("/notes", (req, res) => {
@@ -21,7 +21,7 @@ router.post("/notes", (req, res) => {
    
     req.body.id = notes.length.toString();
   
-    if (!validateAnimal(req.body)) {
+    if (!validateNotes(req.body)) {
       res.status(400).send("Do it better");
     } else {
       const note = createNewNote(req.body, notes);
