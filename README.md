@@ -28,7 +28,7 @@
 
   [LinkedIn](https://www.linkedin.com/in/jeremy-cornwall-a9698448/),
 
-   and My TA Josh, my dog George, the Uintah mountains.  
+   and My tutor Josh, my dog George, the Uintah mountains.  
   
   
   
