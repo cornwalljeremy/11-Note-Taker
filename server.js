@@ -14,7 +14,7 @@ app.get('/notes', (req, res) => {
 });
 
 app.get('/api/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, "/db/db.json"));
+  res.sendFile(path.join(__dirname, "./db/db.json"));
 });
 
 app.get('api/notes/:id', (req, res) => {
@@ -46,9 +46,8 @@ app.delete("/api/notes/:id", function(req, res) {
       return currNote.id != noteID;
   })
   
-  for (currNote of savedNotes) {
-      currNote.id = newID.toString();
-      newID++;
+  for (let i = 0; i < savedNotes.length; i++){
+    savedNotes[i].id = i.toString();
   }
 
   fs.writeFileSync("./db/db.json", JSON.stringify(savedNotes, null, 2));
