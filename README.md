@@ -13,7 +13,7 @@
   [11-Note-Taker](https://github.com/cornwalljeremy/11-Note-Taker)
 
   ## Heroku Link:
-  [anote-taker](https://dashboard.heroku.com/apps/anote-taker)
+  [anote-taker](https://anote-taker.herokuapp.com/)
 
   ### About:
   This is a note taking app. When prompted to input a note it will ask for a subject line then the content of the note. You will then be able to save the note and recall it later. The information saves to a JSON file. Most of the work is done on the backend with this app. 
